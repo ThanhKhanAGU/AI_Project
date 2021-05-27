@@ -95,5 +95,16 @@ namespace Astar
         {
             f_settext();
         }
+
+        private void TextBox_PreviewKeyUp(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            UInt16.TryParse(txtn.Text, out Size);
+            create_table(Size);
+        }
     }
 }

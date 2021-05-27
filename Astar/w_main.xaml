@@ -30,6 +30,8 @@
             <StackPanel x:Name="tool" Grid.Column="1" Background="Transparent" MouseLeftButtonDown="tool_MouseLeftButtonDown">
                 <Button Height="40" Margin="20" Content="Get" Click="Button_Click"/>
                 <Button Height="40" Margin="20 0 20 20 " Content="Set" Click="Button_Click_1"/>
+                <TextBox x:Name="txtn" Height="40" Margin="20 0 20 20 " Text="20" VerticalContentAlignment="Center" Padding="10,0,0,0" FontSize="16" PreviewKeyUp="TextBox_PreviewKeyUp"/>
+                <Button Height="40" Margin="20 0 20 20 " Content="map" Click="Button_Click_2"/>
             </StackPanel>
         </Grid>
     </Border>
