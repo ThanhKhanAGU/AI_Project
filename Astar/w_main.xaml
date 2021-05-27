@@ -3,14 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Astar"
-        mc:Ignorable="d"
-        Title="w_main" Height="845" Width="1130" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}">
+        xmlns:local="clr-namespace:Astar.uctrl"
+        mc:Ignorable="d" 
+        ResizeMode="CanResizeWithGrip"
+        Title="w_main" Height="845" Width="1130" 
+        AllowsTransparency="True" WindowStyle="None" 
+        Background="{x:Null}" Foreground="{x:Null}" 
+        WindowStartupLocation="CenterScreen">
     <Border Background="#FF012336" CornerRadius="15" Margin="10">
         <Border.Effect>
             <DropShadowEffect Color="#FF616161"/>
         </Border.Effect>
-        <Grid >
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="{Binding ElementName=_this,Path=Height}"/>
                 <ColumnDefinition/>
@@ -20,10 +24,12 @@
                     <DropShadowEffect BlurRadius="10" Opacity="0.8"/>
                 </Border.Effect>
                 <Grid x:Name="table">
+                    
                 </Grid>
             </Border>
-            <StackPanel x:Name="tool">
-
+            <StackPanel x:Name="tool" Grid.Column="1" Background="Transparent" MouseLeftButtonDown="tool_MouseLeftButtonDown">
+                <Button Height="40" Margin="20" Content="Get" Click="Button_Click"/>
+                <Button Height="40" Margin="20 0 20 20 " Content="Set" Click="Button_Click_1"/>
             </StackPanel>
         </Grid>
     </Border>
