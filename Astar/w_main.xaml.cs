@@ -10,19 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Astar
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for w_main.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class w_main : Window
     {
-        public MainWindow()
+        public static w_main w_Main;
+        public w_main()
         {
             InitializeComponent();
+            w_Main = this;
         }
     }
 }
